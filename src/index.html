@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+
+    <meta property="og:url" content="https://cpg.doc.ic.ac.uk/individual-risk/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Too unique to hide" />
+    <meta property="og:description" content="According to research by UCLouvain and Imperial College London, I have 83% chances of being correctly re-identified in a sampled and anonymized dataset. What about you?" />
+    <meta property="og:image" content="https://cpg.doc.ic.ac.uk/individual-risk/<%= require('./assets/distribution.png') %>" />
+    <meta property="og:image" content="https://cpg.doc.ic.ac.uk/individual-risk/<%= require('./assets/fig_sampling.png') %>" />
+    <meta property="og:image" content="https://cpg.doc.ic.ac.uk/individual-risk/<%= require('./assets/fig_anon_record.png') %>" />
+
+    <title>Too unique to hide</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="root"></div>
+    <script src="anonymous-analytics.js"></script>
+    <script>window.anonymousAnalytics('UA-5153697-6');</script>
+</body>
+</html>

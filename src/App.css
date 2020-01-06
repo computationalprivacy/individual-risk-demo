@@ -1,0 +1,170 @@
+/* @import '../node_modules/antd/dist/antd.css'; */
+
+/* Reset + typography */
+html, body, .app {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: calc(13px + .15vw);
+  line-height: 2rem;
+  color: rgba(0, 0, 0, .9);
+  background-color: rgb(240, 242, 245) !important;
+
+  min-height: 100%;
+}
+
+.ant-layout-content {
+  padding: 4rem 1rem 1rem 1rem;
+}
+
+.app .ant-row-flex {
+  margin-bottom: 2rem;
+}
+
+.app .legend {
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, .8);
+}
+
+.app .ant-card {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.app p + h2 {
+  margin-top: 4rem;
+}
+
+.app .faded {
+  /* color: rgba(0, 0, 0, .5); */
+  opacity: .5;
+  transition: all 0.5s;
+}
+
+.ant-tag {
+  margin: 0;
+}
+
+.ant-form-item label {
+  text-transform: capitalize;
+}
+
+/*** Fake mobile app ****/
+
+.fake-phone-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin: 0 -10px;
+}
+
+@media (max-width: 800px) {
+  .ant-layout-content {
+    padding-top: 1rem;
+  }
+
+  .fake-phone-wrapper {
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+  }
+  .app-block {
+    order: 2;
+    align-self: center !important;
+  }
+
+  .fake-phone-legend > div {
+    margin: 0 -10px;
+  }
+}
+
+.fake-phone-legend > div {
+  align-self: flex-start;
+  margin: 0 1em;
+  padding: 20px 0;
+}
+
+.fake-phone-wrapper .app-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 350px;
+  min-width: 350px;
+  height: 600px;
+  padding: 20px;
+
+  transition: 0.5s all;
+}
+
+.fake-phone-wrapper .app-block.masked {
+  filter: grayscale();
+}
+
+.fake-phone-wrapper .app-block.hidden {
+  /* filter: grayscale() blur(5px); */
+  display: none;
+}
+
+.fake-phone-app {
+  font-size: 16px;
+  color: #fff;
+  background-color: #08AEEA;
+  background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+}
+
+.fake-phone-results {
+  background-color: #ffffff;
+}
+
+/* Phone app UI */
+
+.fake-phone-app h3 {
+  color: #fff;
+}
+
+.fake-phone-app .text-intro, .fake-phone-app .fake-form {
+  margin-bottom: 2rem;
+}
+
+.fake-phone-app input {
+  width: 100%;
+  border-radius: 0;
+}
+
+.fake-phone-app button {
+  color: white;
+  background: none;
+  border-color: white;
+  border-radius: 0;
+}
+
+.fake-phone-app .btn-left {
+  float: left;
+}
+
+.fake-phone-app .btn-right {
+  float: right;
+}
+
+
+/**** User form as a card ***/
+
+.compact-user-form {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.compact-user-form .ant-form-item {
+  margin-bottom: .5rem;
+}
+
+
+/**** Recharts figures ****/
+
+text.recharts-text {
+  font-size: 10px;
+}
+
+text.recharts-text.recharts-label {
+  font-size: 12px;
+}
